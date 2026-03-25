@@ -1,27 +1,30 @@
-<html>
-  <head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Track Counter</title>
     <link rel="stylesheet" href="index.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Bangers&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-
-  <body>
-    <main class="mnd">
-      <h1>People Entered On Track :</h1>
-      <h2 id="count-el">0</h2>
-      <div class="ipt-btn">
-        <button id="increment-btn">INCREMENT</button>
-        <button id="save-btn">SAVE</button>
-      </div>
-      <button id="reset-btn">RESET</button>
-      <p id="previous-entry">Previous entries:</p>
-      <p id="total-entry">Total entries:0</p>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet" />
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <main class="glass-card">
+        <h1>People Entered On Track:</h1>
+        <h2 id="count-el">0</h2>
+        
+        <div class="action-buttons">
+            <button id="increment-btn">INCREMENT</button>
+            <button id="save-btn">SAVE</button>
+        </div>
+        <button id="reset-btn">RESET</button>
+        
+        <div class="stats-container">
+            <p id="previous-entry">Previous entries: </p>
+            <p id="total-entry">Total entries: 0</p>
+        </div>
     </main>
-
-    <script src="index.js"></script>
-  </body>
+</body>
 </html>
